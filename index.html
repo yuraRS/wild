@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Wild Kingdom</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231207094946">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a data-goto=".hero" href="#" class="menu__link">Home</a></li>
+							</li>
+							<li class="menu__item"><a data-goto-header data-goto=".our" href="#" class="menu__link">Products</a>
+								<div class="menu__arrow"></div>
+								<ul class="menu__sub-list">
+									<li class="menu__sub-item">
+										<a href="#" class="menu__sub-link">Products 1</a>
+									</li>
+									<li class="menu__sub-item">
+										<a href="#" class="menu__sub-link">Products 2</a>
+									</li>
+									<li class="menu__sub-item">
+										<a href="#" class="menu__sub-link">Products 3</a>
+									</li>
+									<li class="menu__sub-item">
+										<a href="#" class="menu__sub-link">Products 4</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item"><a data-goto-header data-goto=".care" href="#" class="menu__link">Services</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a data-goto=".hero" href="#" class="header__logo _icon-logo"></a>
+				<div data-da=".menu__body, 768, 2" class="header__boby">
+					<a href="#" class="header__link">Log in</a>
+					<a href="#" class="header__link">Register</a>
+					<a href="#" class="header__button">Contact</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<div data-goto=".hero" class="hero__arrow-fix _icon-arrow"></div>
+				<div class="hero__fon">
+					<picture><source srcset="img/hero/fon.webp" type="image/webp"><img src="img/hero/fon.jpg" alt="fon"></picture>
+				</div>
+				<div class="hero__container">
+					<div class="hero__info">
+						<h1 class="hero__title _anim-items _anim-on-hide">A better world for pets</h1>
+						<button type="button" class="hero__button _anim-items _anim-on-hide">Explore</button>
+					</div>
+					<div class="hero__body _anim-items _anim-on-hide">
+						<div class="hero__controll">
+							<button type="button" class="hero__arrow hero__arrow--left _icon-arrow"></button>
+							<button type="button" class="hero__arrow hero__arrow--right _icon-arrow"></button>
+						</div>
+						<!-- Оболонка слайдера -->
+						<div class="hero__slider swider-hero swiper">
+							<!-- Частина слайдера, що рухається -->
+							<div class="swider-hero__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="swider-hero__slide swiper-slide">
+									<div class="swider-hero__image">
+										<picture><source srcset="img/hero/01.webp" type="image/webp"><img src="img/hero/01.png" alt="image"></picture>
+									</div>
+								</div>
+								<div class="swider-hero__slide swiper-slide">
+									<div class="swider-hero__image">
+										<picture><source srcset="img/hero/01.webp" type="image/webp"><img src="img/hero/01.png" alt="image"></picture>
+									</div>
+								</div>
+								<div class="swider-hero__slide swiper-slide">
+									<div class="swider-hero__image">
+										<picture><source srcset="img/hero/01.webp" type="image/webp"><img src="img/hero/01.png" alt="image"></picture>
+									</div>
+								</div>
+							</div>
+							<!-- Якщо потрібна пагінація -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class="about__container _anim-items _anim-on-hide">
+					<div class="about__top">
+						<div class="about__content">
+							<div class="about__image">
+								<picture><source srcset="img/about/01.webp" type="image/webp"><img src="img/about/01.jpg" alt="image"></picture>
+							</div>
+						</div>
+						<div class="about__info">
+							<div class="about__block block">
+								<div class="block__subtitle">About us</div>
+								<h3 class="block__title">Treating pet like Royalty</h3>
+								<div class="block__info">“They’re not just pets, they’re family”</div>
+								<div class="block__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.
+									</p>
+								</div>
+								<button type="button" class="block__button">Explore</button>
+							</div>
+						</div>
+					</div>
+					<div class="about__bottom">
+						<div class="about__item">
+							<div class="about__icon">
+								<img src="img/about/icon/01.svg" alt="icon">
+							</div>
+							<div class="about__title">Pet food</div>
+						</div>
+						<div class="about__item">
+							<div class="about__icon">
+								<img src="img/about/icon/02.svg" alt="icon">
+							</div>
+							<div class="about__title">Pet care</div>
+						</div>
+						<div class="about__item">
+							<div class="about__icon">
+								<img src="img/about/icon/03.svg" alt="icon">
+							</div>
+							<div class="about__title">Pet accessories</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__our our">
+				<div class="our__container _anim-items _anim-on-hide">
+					<div class="our__block block">
+						<div class="block__subtitle block__subtitle_centr">About us</div>
+						<h3 class="block__title block__title_centr">Treating pet like Royalty</h3>
+						<div class="block__text block__text_centr">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.
+							</p>
+						</div>
+					</div>
+					<div class="our__body">
+						<div class="our__colum">
+							<div class="our__item item-our">
+								<div class="item-our__top">
+									<a href="#" class="item-our__button">Add to cart</a>
+									<a href="#" class="item-our__image">
+										<picture><source srcset="img/our/01.webp" type="image/webp"><img src="img/our/01.png" alt="image"></picture>
+									</a>
+								</div>
+								<div class="item-our__bottom">
+									<div class="item-our__info">
+										<a href="#" class="item-our__name">Luxury pet bed</a>
+										<div class="item-our__price">$120</div>
+									</div>
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">5</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="our__colum">
+							<div class="our__item item-our">
+								<div class="item-our__top">
+									<a href="#" class="item-our__button">Add to cart</a>
+									<a href="#" class="item-our__image">
+										<picture><source srcset="img/our/02.webp" type="image/webp"><img src="img/our/02.jpg" alt="image"></picture>
+									</a>
+								</div>
+								<div class="item-our__bottom">
+									<div class="item-our__info">
+										<a href="#" class="item-our__name">Cat Food</a>
+										<div class="item-our__price">$20</div>
+									</div>
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">4</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="our__colum">
+							<div class="our__item item-our">
+								<div class="item-our__top">
+									<a href="#" class="item-our__button">Add to cart</a>
+									<a href="#" class="item-our__image">
+										<picture><source srcset="img/our/03.webp" type="image/webp"><img src="img/our/03.png" alt="image"></picture>
+									</a>
+								</div>
+								<div class="item-our__bottom">
+									<div class="item-our__info">
+										<a href="#" class="item-our__name">Dog food</a>
+										<div class="item-our__price">$30</div>
+									</div>
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">5</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="our__colum">
+							<div class="our__item item-our">
+								<div class="item-our__top">
+									<a href="#" class="item-our__button">Add to cart</a>
+									<a href="#" class="item-our__image">
+										<picture><source srcset="img/our/04.webp" type="image/webp"><img src="img/our/04.png" alt="image"></picture>
+									</a>
+								</div>
+								<div class="item-our__bottom">
+									<div class="item-our__info">
+										<a href="#" class="item-our__name">Treat for dog</a>
+										<div class="item-our__price">$60</div>
+									</div>
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">4</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="our__colum">
+							<div class="our__item item-our">
+								<div class="item-our__top">
+									<a href="#" class="item-our__button">Add to cart</a>
+									<a href="#" class="item-our__image">
+										<picture><source srcset="img/our/05.webp" type="image/webp"><img src="img/our/05.png" alt="image"></picture>
+									</a>
+								</div>
+								<div class="item-our__bottom">
+									<div class="item-our__info">
+										<a href="#" class="item-our__name">scratching toy for cat</a>
+										<div class="item-our__price">$200</div>
+									</div>
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">4</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="our__colum">
+							<div class="our__item item-our">
+								<div class="item-our__top">
+									<a href="#" class="item-our__button">Add to cart</a>
+									<a href="#" class="item-our__image">
+										<picture><source srcset="img/our/06.webp" type="image/webp"><img src="img/our/06.png" alt="image"></picture>
+									</a>
+								</div>
+								<div class="item-our__bottom">
+									<div class="item-our__info">
+										<a href="#" class="item-our__name">Teddy bear for dog</a>
+										<div class="item-our__price">$80</div>
+									</div>
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">4</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="our__colum">
+							<div class="our__item item-our">
+								<div class="item-our__top">
+									<a href="#" class="item-our__button">Add to cart</a>
+									<a href="#" class="item-our__image">
+										<picture><source srcset="img/our/07.webp" type="image/webp"><img src="img/our/07.png" alt="image"></picture>
+									</a>
+								</div>
+								<div class="item-our__bottom">
+									<div class="item-our__info">
+										<a href="#" class="item-our__name">Treats Knot Bone</a>
+										<div class="item-our__price">$8</div>
+									</div>
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">4</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="our__colum">
+							<div class="our__item item-our">
+								<div class="item-our__top">
+									<a href="#" class="item-our__button">Add to cart</a>
+									<a href="#" class="item-our__image">
+										<picture><source srcset="img/our/08.webp" type="image/webp"><img src="img/our/08.png" alt="image"></picture>
+									</a>
+								</div>
+								<div class="item-our__bottom">
+									<div class="item-our__info">
+										<a href="#" class="item-our__name">dog bowls</a>
+										<div class="item-our__price">$70</div>
+									</div>
+									<div class="rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">4</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="our__bottom">
+						<a href="#" class="our__batton">Explore</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__services services">
+				<div class="services__decor">
+					<img src="img/services/decor.svg" alt="decor">
+				</div>
+				<div class="services__container _anim-items _anim-on-hide">
+					<div class="services__content">
+						<div class="services__image">
+							<picture><source srcset="img/services/01.webp" type="image/webp"><img src="img/services/01.jpg" alt="image"></picture>
+						</div>
+					</div>
+					<div class="services__info">
+						<div class="services__block block">
+							<div class="block__subtitle block__subtitle_color">our services</div>
+							<h3 class="block__title">Quality Things for Loving Pets</h3>
+							<div class="block__info block__info_color">“More than a Pet Store…”</div>
+							<div class="block__text block__text_color">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.
+								</p>
+							</div>
+							<button type="button" class="block__button block__button_transparent">Explore</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__care care">
+				<div class="care__container _anim-items _anim-on-hide">
+					<div class="care__row">
+						<div class="care__colum care__colum_mini">
+							<div class="care__item item-care">
+								<div class="item-care__image item-care__image_mini">
+									<picture><source srcset="img/care/01.webp" type="image/webp"><img src="img/care/01.jpg" alt="image"></picture>
+								</div>
+								<div class="item-care__body">
+									<div class="item-care__title">Taking dogs care to the next level</div>
+									<a data-popup="#popup" href="#" class="item-care__arrow _icon-arrow"></a>
+								</div>
+							</div>
+						</div>
+						<div class="care__colum">
+							<div class="care__item item-care">
+								<div class="item-care__image">
+									<picture><source srcset="img/care/02.webp" type="image/webp"><img src="img/care/02.jpg" alt="image"></picture>
+								</div>
+								<div class="item-care__body">
+									<div class="item-care__title">We value the best health of your pets</div>
+									<a data-popup="#popup" href="#" class="item-care__arrow _icon-arrow"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="care__row care__row_two">
+						<div class="care__colum">
+							<div class="care__item item-care">
+								<div class="item-care__image">
+									<picture><source srcset="img/care/03.webp" type="image/webp"><img src="img/care/03.jpg" alt="image"></picture>
+								</div>
+								<div class="item-care__body">
+									<div class="item-care__title">Trust us with your pet’s vacation</div>
+									<a data-popup="#popup" href="#" class="item-care__arrow _icon-arrow"></a>
+								</div>
+							</div>
+						</div>
+						<div class="care__colum care__colum_mini">
+							<div class="care__item item-care">
+								<div class="item-care__image item-care__image_mini">
+									<picture><source srcset="img/care/04.webp" type="image/webp"><img src="img/care/04.jpg" alt="image"></picture>
+								</div>
+								<div class="item-care__body">
+									<div class="item-care__title">We treat cats with utmost care</div>
+									<a data-popup="#popup" href="#" class="item-care__arrow _icon-arrow"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__contact contact _anim-items _anim-on-hide">
+				<div class="contact__top"></div>
+				<div class="contact__content content-contact">
+					<div class="content-contact__container">
+						<div data-prlx-parent class="content-contact__content">
+							<div data-prlx class="content-contact__image content-contact__image_one">
+								<picture><source srcset="img/contact/01.webp" type="image/webp"><img src="img/contact/01.jpg" alt="image"></picture>
+							</div>
+							<div class="content-contact__image content-contact__image_two">
+								<div class="content-contact__play-body">
+									<div class="content-contact__play _icon-play"></div>
+								</div>
+								<picture><source srcset="img/contact/02.webp" type="image/webp"><img src="img/contact/02.jpg" alt="image"></picture>
+							</div>
+						</div>
+						<div class="content-contact__info">
+							<div class="content-contact__block block">
+								<div class="block__subtitle">Contact us</div>
+								<h3 class="block__title block__title_black">Come for the care, leave with a smile</h3>
+								<div class="block__schedule schedule-block">
+									<div class="schedule-block__clock _icon-clock"></div>
+									<div class="schedule-block__top">Monday/Friday 9:00-23:00</div>
+									<div class="schedule-block__bottom">Saturday 10:00-21:00</div>
+								</div>
+								<div class="block__geo">
+									<div class="block__location _icon-geo"></div>
+									<a href="tel:+012-345-6789" class="block__tel">+012-345-6789</a>
+								</div>
+								<a href="mailto:TheWildKingdom@contact.com" class="block__email">TheWildKingdom@contact.com</a>
+								<div class="block__adress">9889 Lorem Ipsum street, Pellentesque, CA, USA</div>
+								<button type="button" class="block__button">Explore</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact__bottom bottom-contact">
+					<div class="bottom-contact__container">
+						<div class="bottom-contact__picture">
+							<div class="bottom-contact__icon">
+								<img src="img/contact/icons/01.svg" alt="icon">
+							</div>
+						</div>
+						<div class="bottom-contact__body">
+							<div class="bottom-contact__arrow bottom-contact__arrow_one _icon-arrow"></div>
+							<div class="bottom-contact__arrow bottom-contact__arrow_two _icon-arrow"></div>
+							<div class="bottom-contact__slider slider-bottom-contact swiper">
+								<div class="slider-bottom-contact__wrapper swiper-wrapper">
+									<div class="slider-bottom-contact__slide swiper-slide">
+										<div class="slider-bottom-contact__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut <span class="slider-bottom-contact__end">turpis.</span>
+											</p>
+										</div>
+									</div>
+									<div class="slider-bottom-contact__slide swiper-slide">
+										<div class="slider-bottom-contact__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut <span class="slider-bottom-contact__end">turpis.</span>
+											</p>
+										</div>
+									</div>
+									<div class="slider-bottom-contact__slide swiper-slide">
+										<div class="slider-bottom-contact__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut <span class="slider-bottom-contact__end">turpis.</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bottom-contact__bottom">
+							<h2 class="bottom-contact__title">Etiam vulputate</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top top-footer">
+					<div class="top-footer__info">
+						<div data-spollers="665,max" class="top-footer__spollers spollers">
+							<details class="spollers__content">
+								<summary class="spollers__title">Sitemap</summary>
+								<ul class="spollers__body">
+									<li class="spollers__item">
+										<a href="#" class="spollers__link">Home</a>
+									</li>
+									<li class="spollers__item">
+										<a href="#" class="spollers__link">About</a>
+									</li>
+									<li class="spollers__item">
+										<a href="#" class="spollers__link">Products</a>
+									</li>
+									<li class="spollers__item">
+										<a href="#" class="spollers__link">Services</a>
+									</li>
+								</ul>
+							</details>
+						</div>
+						<div class="top-footer__social">
+							<a href="#" class="top-footer__icon _icon-tweeter"></a>
+							<a href="#" class="top-footer__icon _icon-instagram"></a>
+							<a href="#" class="top-footer__icon _icon-tic-toc"></a>
+							<a href="#" class="top-footer__icon _icon-Negative"></a>
+						</div>
+					</div>
+					<div class="top-footer__center">
+						<div class="top-footer__logo _icon-logo"></div>
+					</div>
+					<div class="top-footer__end end-top-footer">
+						<div class="end-top-footer__title">Treating all the pets present here like royalty.</div>
+						<form name="mainForm" data-ajax action="files/sendmail/sendmail.php" method="POST" enctype="multipart/form-data" class="end-top-footer__form">
+							<input type="text" name="email" data-error="Error" placeholder="Enter email address" class="end-top-footer__input">
+							<button type="submit" class="end-top-footer__button">Subscribe</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copy">Copyright Dotcreativemarket</div>
+				</div>
+			</div>
+		</footer>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">X</button>
+					<div class="popup__title">Quality Things for Loving Pets</div>
+					<div class="popup__subtitle">“More than a Pet Store…”</div>
+					<div class="popup__text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet officiis velit, nam hic nemo ab debitis! Soluta molestiae magni quia, recusandae perferendis voluptatem? Eaque, iste atque repudiandae nisi quia eligendi!
+					</div>
+					<button type="button" class="popup__button">Explore</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="js/app.min.js?_v=20231207094946"></script>
+</body>
+
+</html>
